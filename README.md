@@ -1,3 +1,5 @@
 png files: app > src > main > res > drawable-nodpi
 
-xml file: app > src > main > res > layout
+activity xml file: app > src > main > res > layout
+
+btn xml files: app > src > main > res > drawable
