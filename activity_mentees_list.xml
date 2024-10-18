@@ -18,9 +18,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="441dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_background" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -28,477 +37,589 @@
                 android:textColor="#1073ad"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="50dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"/>
 
-            //start of first mentee
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/startupname1"
-                style="@android:style/Widget.Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/btn_background_4"
-                android:drawablePadding="20dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:text="ZenithWorks"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="21sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background_5"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="135dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/mentee1" />
-            </LinearLayout>
-
-            <LinearLayout
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="20dp">
-
-                <!-- Button 1 -->
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/menteename1"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_5"
-                    android:drawablePadding="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Harry Enriquez" />
-
-                <!-- LinearLayout for Chat and Project buttons -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:weightSum="2"
-                    android:gravity="center"
-                    android:background="@drawable/btn_background_5">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonChat"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="35dp"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/chat_rounded"
-                        android:text="Chat"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonProject"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/project_rounded"
-                        android:text="Project"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/marginbuttom"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="25dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_3" />
-            </LinearLayout>
-            //end of first mentee
-
-
-            //start of second mentee
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/startupname2"
-                style="@android:style/Widget.Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/btn_background_4"
-                android:drawablePadding="20dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:text="Bright Hatch"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="21sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background_5"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="135dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/mentee2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="20dp">
-
-                <!-- Button 1 -->
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/menteename2"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_5"
-                    android:drawablePadding="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Dayton Glass" />
-
-                <!-- LinearLayout for Chat and Project buttons -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:weightSum="2"
-                    android:gravity="center"
-                    android:background="@drawable/btn_background_5">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonChat"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="35dp"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/chat_rounded"
-                        android:text="Chat"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonProject"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/project_rounded"
-                        android:text="Project"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/marginbuttom"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="25dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_3" />
-            </LinearLayout>
-            //end of second mentee
-
-            //start of 3rd mentee
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/startupname3"
-                style="@android:style/Widget.Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/btn_background_4"
-                android:drawablePadding="20dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:text="Quantum Bloom"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="21sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background_5"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="135dp"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/mentee3"
-                    android:layout_marginEnd="0dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="20dp">
-
-                <!-- Button 1 -->
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/menteename3"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_5"
-                    android:drawablePadding="20dp"
-                    android:paddingTop="0dp"
-                    android:paddingBottom="10dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Alex Brown" />
-
-                <!-- LinearLayout for Chat and Project buttons -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:weightSum="2"
-                    android:gravity="center"
-                    android:background="@drawable/btn_background_5">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonChat"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="35dp"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/chat_rounded"
-                        android:text="Chat"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonProject"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/project_rounded"
-                        android:text="Project"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/marginbuttom"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="25dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_3" />
-            </LinearLayout>
-            //end of 3rd mentee
-
-            //start of 4th mentee
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/startupname4"
-                style="@android:style/Widget.Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/btn_background_4"
-                android:drawablePadding="20dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:text="CloudVibe"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="21sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/btn_background_5"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="135dp"
-                    android:layout_marginTop="2dp"
-                    android:src="@drawable/mentee4"
-                    android:layout_marginEnd="0dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="20dp">
-
-                <!-- Button 1 -->
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/menteename4"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_5"
-                    android:drawablePadding="20dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="10dp"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Martha Stark" />
-
-                <!-- LinearLayout for Chat and Project buttons -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:weightSum="2"
-                    android:gravity="center"
-                    android:background="@drawable/btn_background_5">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonChat"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="35dp"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/chat_rounded"
-                        android:text="Chat"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buttonProject"
-                        android:layout_width="0dp"
-                        android:layout_height="41dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="35dp"
-                        android:background="@drawable/project_rounded"
-                        android:text="Project"
-                        android:textColor="#FFFFFF"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/marginbuttom"
-                    style="@android:style/Widget.Button"
-                    android:layout_width="match_parent"
-                    android:layout_height="25dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@drawable/btn_background_3" />
-            </LinearLayout>
-            //end of 4th mentee
-
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                style="@android:style/Widget.Button"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="40dp"
-                android:background="@drawable/btn_background_2"
-                android:text="Back to Main page"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                app:iconifiedByDefault="false"
+                app:queryHint="Search Mentees" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:background="#ececec">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--start of 1st mentee-->
+                        <LinearLayout
+                            android:id="@+id/menteecard1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/startupname1"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/btn_background_4"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="ZenithWorks"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="155dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/btn_background_5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="135dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="0dp"
+                                android:src="@drawable/mentee1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="20dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/menteename1"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_5"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="Harry Enriquez" />
+
+                            <!-- LinearLayout for Chat and Project buttons -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:weightSum="2"
+                                android:gravity="center"
+                                android:background="@drawable/btn_background_5">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonChat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/chat_rounded"
+                                    android:text="Chat"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonProject"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/project_rounded"
+                                    android:text="Project"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/marginbuttom"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            <!--end of 1st mentee-->
+
+
+                        <!--start of 2nd mentee-->
+                        <LinearLayout
+                            android:id="@+id/menteecard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/startupname2"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/btn_background_4"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="Bright Hatch"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="155dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/btn_background_5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="135dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="0dp"
+                                android:src="@drawable/mentee2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="20dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/menteename2"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_5"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="Dayton Glass" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:weightSum="2"
+                                android:gravity="center"
+                                android:background="@drawable/btn_background_5">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonChat2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/chat_rounded"
+                                    android:text="Chat"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonProject2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/project_rounded"
+                                    android:text="Project"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/marginbuttom2"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            <!--end of 2nd mentee-->
+
+                        <!--start of 3rd mentee-->
+                        <LinearLayout
+                            android:id="@+id/menteecard3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/startupname3"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/btn_background_4"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="Quantum Bloom"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="155dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/btn_background_5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="135dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/mentee3"
+                                android:layout_marginEnd="0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="20dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/menteename3"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_5"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="0dp"
+                                android:paddingBottom="10dp"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="Alex Brown" />
+
+                            <!-- LinearLayout for Chat and Project buttons -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:weightSum="2"
+                                android:gravity="center"
+                                android:background="@drawable/btn_background_5">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonChat3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/chat_rounded"
+                                    android:text="Chat"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonProject3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/project_rounded"
+                                    android:text="Project"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/marginbuttom3"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+            <!--end of 3rd mentee-->
+
+                        <!--start of 4th mentee-->
+                    <LinearLayout
+                        android:id="@+id/menteecard4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/startupname4"
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/btn_background_4"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="CloudVibe"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="21sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="155dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@drawable/btn_background_5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="135dp"
+                                android:layout_height="135dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/mentee4"
+                                android:layout_marginEnd="0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="20dp">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/menteename4"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_5"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="10dp"
+                                android:paddingStart="20dp"
+                                android:paddingEnd="20dp"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="Martha Stark" />
+
+                            <!-- LinearLayout for Chat and Project buttons -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:weightSum="2"
+                                android:gravity="center"
+                                android:background="@drawable/btn_background_5">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonChat4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/chat_rounded"
+                                    android:text="Chat"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/buttonProject4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="41dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="35dp"
+                                    android:background="@drawable/project_rounded"
+                                    android:text="Project"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="21sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/marginbuttom4"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/btn_background_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                        <!--end of 4th mentee-->
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            style="@android:style/Widget.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/btn_background_2"
+                            android:text="Back to Main page"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="0dp"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:background="@drawable/btn_background_5">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:background="@drawable/btn_background_5">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>
