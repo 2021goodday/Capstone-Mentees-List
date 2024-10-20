@@ -1,16 +1,12 @@
 package com.example.investor
 
-
 import android.os.Bundle
+import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import android.widget.LinearLayout
-
 
 // Data class to represent a Mentee
 data class Mentee(
@@ -18,7 +14,6 @@ data class Mentee(
     val imageResource: Int,
     val startupName: String
 )
-
 
 class MenteesList : AppCompatActivity() {
     private lateinit var searchView: SearchView
@@ -30,27 +25,27 @@ class MenteesList : AppCompatActivity() {
     )
     private var filteredList: List<Mentee> = itemList
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_mentees_list)
 
-
+        // Enable edge-to-edge layout
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-
+        // Initialize search view
         searchView = findViewById(R.id.searchView)
 
+        // Initialize Mentee views (cards)
         val groupView1: LinearLayout = findViewById(R.id.menteecard1)
         val groupView2: LinearLayout = findViewById(R.id.menteecard2)
         val groupView3: LinearLayout = findViewById(R.id.menteecard3)
         val groupView4: LinearLayout = findViewById(R.id.menteecard4)
 
+        // Set up search view to handle text input
         setupSearchView()
     }
 
@@ -67,17 +62,28 @@ class MenteesList : AppCompatActivity() {
         })
     }
 
-
     private fun filter(query: String?) {
-        filteredList = if (query.isNullOrEmpty()) {
-            itemList
+        // Show all mentee cards if the query is empty
+        if (query.isNullOrEmpty()) {
+            findViewById<LinearLayout>(R.id.menteecard1).visibility = View.VISIBLE
+            findViewById<LinearLayout>(R.id.menteecard2).visibility = View.VISIBLE
+            findViewById<LinearLayout>(R.id.menteecard3).visibility = View.VISIBLE
+            findViewById<LinearLayout>(R.id.menteecard4).visibility = View.VISIBLE
         } else {
-            itemList.filter {
-                it.name.contains(query, ignoreCase = true) ||
-                        it.startupName.contains(query, ignoreCase = true)
+            // Filter the list based on the query
+            filteredList = itemList.filter {
+                it.name.contains(query, ignoreCase = true) || it.startupName.contains(query, ignoreCase = true)
             }
-        }
 
+            // Toggle visibility of mentee cards based on the filtering result
+            findViewById<LinearLayout>(R.id.menteecard1).visibility =
+                if (filteredList.contains(itemList[0])) View.VISIBLE else View.GONE
+            findViewById<LinearLayout>(R.id.menteecard2).visibility =
+                if (filteredList.contains(itemList[1])) View.VISIBLE else View.GONE
+            findViewById<LinearLayout>(R.id.menteecard3).visibility =
+                if (filteredList.contains(itemList[2])) View.VISIBLE else View.GONE
+            findViewById<LinearLayout>(R.id.menteecard4).visibility =
+                if (filteredList.contains(itemList[3])) View.VISIBLE else View.GONE
+        }
     }
 }
-
