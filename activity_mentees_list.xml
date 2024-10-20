@@ -48,7 +48,7 @@
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="40dp"
                 app:iconifiedByDefault="false"
-                app:queryHint="Search Mentees" />
+                app:queryHint="Search mentees" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -70,6 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
 
                         <!--start of 1st mentee-->
                         <LinearLayout
@@ -575,6 +576,9 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="20dp">
 
+
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -597,7 +601,9 @@
                     android:background="@drawable/btn_background_5">
                 </LinearLayout>
 
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -605,6 +611,7 @@
                 android:orientation="vertical"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="20dp">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -618,7 +625,12 @@
 
                 </LinearLayout>
 
+
             </LinearLayout>
+
+
+
+
 
 
         </LinearLayout>
